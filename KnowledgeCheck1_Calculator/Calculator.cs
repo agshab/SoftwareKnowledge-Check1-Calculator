@@ -20,7 +20,8 @@ namespace KnowledgeCheck1_Calculator
 
         public int Multiply(int first, int second)
         {
-            throw new NotImplementedException();
+            // Add code here
+            return first * second;
         }
 
         public double Divide(double first, double second)

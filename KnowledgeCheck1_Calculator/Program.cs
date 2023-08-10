@@ -52,6 +52,22 @@ namespace KnowledgeCheck1_Calculator
 
                 case "3":
                     // Add code here
+                    Console.WriteLine("Enter 2 integers to multiply");
+                    var multiplyNumber1 = Console.ReadLine();
+                    var multiplyNumber2 = Console.ReadLine();
+
+                    if (int.TryParse(multiplyNumber1, out int Num1) && int.TryParse(multiplyNumber2, out int Num2))
+                    {
+                        Console.WriteLine($"{Num1} * {Num2} = "); // This function actually states function in a statement 
+                        Console.WriteLine(calculator.Multiply(Num1, Num2)); // This function actually mutliplys the fucntion and outpours the results 
+                        string a = Console.ReadLine();
+
+                    }
+                    else
+
+                    {
+                        Console.WriteLine("One or more of the numbers is not an int");
+                    }
                     break;
 
                 case "4":
@@ -68,7 +84,6 @@ namespace KnowledgeCheck1_Calculator
                     {
                         Console.WriteLine("One or more of the numbers is not an int");
                     }
-                    break;
                     break;
 
                 default:
